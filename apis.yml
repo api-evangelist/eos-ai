@@ -1,8 +1,33 @@
 aid: eos-ai
-name: Eos Ai
-description: Eos Ai is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+name: Eos AI
+description: >-
+  Eos AI is a San Francisco healthcare technology company building an autonomous operating system for
+  healthcare that helps clinics and hospitals identify eligible patients and enable early care
+  interventions. The platform connects to fragmented clinical systems (EHRs, imaging archives, labs,
+  scheduling, and billing), resolves patient identities across sites and encounters, and links records
+  into a continuous longitudinal history that can be searched and analyzed as one distributed database.
+  Two harmonization products anchor the stack: VERA standardizes medical imaging across scanners, sites,
+  and protocols to improve model performance and shorten deployment, and LUCIA structures EHR free text,
+  ICD, SNOMED, and clinical signals into a unified representation for downstream analytics. On top of the
+  harmonized data, Eos runs predictive models over full patient trajectories and drives automations into
+  hospital workflows, reporting roughly 3x administrative productivity and 37% revenue recovery in early
+  deployments. Founded in 2025 by Arya Khokhar and backed by Y Combinator (Winter 2026 batch). Its
+  application is gated at my.helloeos.ai; no public developer API, OpenAPI, or developer portal has been
+  published to date, so this profile captures the company identity and the security posture of its public
+  web surface.
 url: https://raw.githubusercontent.com/api-evangelist/eos-ai/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.helloeos.ai/static/images/favicon.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,12 +36,35 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Health
+- Healthcare
+- AI
+- Machine Learning
+- Clinical Data
+- Data Harmonization
+- Medical Imaging
+- Predictive Analytics
+- Hospital Operations
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/eos-ai-domain-security.yml
+- type: Website
+  url: https://www.helloeos.ai/
+- type: Login
+  url: https://my.helloeos.ai/login
+- type: Demo
+  url: https://calendly.com/arya-helloeos/30min
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

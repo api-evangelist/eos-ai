@@ -1,0 +1,22 @@
+generated: '2026-07-19'
+method: searched
+source: live probe of /.well-known/ and agent-discovery paths on the public web host
+host: https://www.helloeos.ai
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /llms.txt
+  status: 404
+note: >-
+  No .well-known discovery documents, OIDC/OAuth metadata, API catalog, ai-plugin manifest, or llms.txt
+  were published on the public host as of the probe date. The product application is gated behind a login
+  at my.helloeos.ai and no public developer/API surface is exposed. Absence recorded as valid data; no
+  WellKnown canonical pointer wired because no document returned 200.
